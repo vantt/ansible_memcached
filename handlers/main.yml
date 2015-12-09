@@ -1,0 +1,8 @@
+---
+- name: Start Memcached
+  sudo: yes
+  service: name=memcached state=started enabled=yes
+
+- name: Reload Memcached
+  sudo: yes
+  service: name=memcached state=reloaded enabled=yes
